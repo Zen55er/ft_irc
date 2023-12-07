@@ -11,16 +11,20 @@
 </div>
 
 ## 🧠 About the project
-A basic implementation of an IRC server that handles authentication, user registration, and several chat commands. 🖥️
+A basic implementation of an IRC server that handles authentication, user registration, bot, file transfer and several chat commands. 🖥️
 
 ## 🌟 Features
 🔒 **Authentication**: Authenticate users with a password.
 
 🖋️ **Registration**: Register users by setting their nickname (NICK) and real name (USER).
 
-📜 **Command Handling**: Process various commands like JOIN, MSG, and PRIVMSG.
+📜 **Command Handling**: Process various commands like JOIN, BAN, TOPIC and PRIVMSG.
 
 🧑‍🤝‍🧑 **Multi-Client Handling**: Uses poll() system call to handle multiple clients simultaneously.
+
+🤖 **Bot**: Detects if a user sends messages with bad words in it.
+
+🗂️ **File Transfer**: It's possible to send files through clients.
 
 ## 🚀 Getting Started
 ### 🛠️ Prerequisites
@@ -43,11 +47,6 @@ For example:
 ```bash
 ./ircserv 6667 12345
 ```
-
-## 💡 Implementation Details
-**Authentication**: Clients authenticate using the PASS command. Upon successful authentication, they register with NICK and USER.
-
-**Command Handling**: Processes commands like JOIN, MSG, and PRIVMSG.
 
 ## 🙏 Acknowledgments
 A huge thank you to my colleagues gacorrei and abaiao-r for their invaluable contributions and insights. This project wouldn't be the same without their assistance. 🙌
