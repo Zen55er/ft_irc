@@ -1,55 +1,28 @@
-<h1 align="center">
-	🌐 FT_IRC 🌐
-</h1>
+## What is it?
+An IRC server designed to work with Hexchat or the netcat command.
 
-<p align="center">
-	<b><i> Bridging the Bytes for Seamless Conversations 🌉</i></b>
-</p>
+The server:
+- Handles multiple clients
+- Uses epoll to avoid blocking connections
+- Allows users to login, join channels and message other users
+- Allows channel owners to customize and moderate the channel
+- Allows for file transfers between users
+- Has a simple bot that shows users how to use the channel and auto moderates messages inside channels
 
-<div align="center">
-<img alt="FT_IRC" src="https://github.com/joao-per/joao-per/blob/main/Badges/Ft_irc.png" />
-</div>
+## How to use this?
+1 - Clone this repository
 
-## 🧠 About the project
-A basic implementation of an IRC server that handles authentication, user registration, bot, file transfer and several chat commands. 🖥️
+2 - Run make
 
-## 🌟 Features
-🔒 **Authentication**: Authenticate users with a password.
+3 - Run `./ircserv <port> <password>`
 
-🖋️ **Registration**: Register users by setting their nickname (NICK) and real name (USER).
+4 - Install Hexchat and add the server created in the previous step
 
-📜 **Command Handling**: Process various commands like JOIN, BAN, TOPIC and PRIVMSG.
+5 - Connect to the server with your choice of credentials
 
-🧑‍🤝‍🧑 **Multi-Client Handling**: Uses poll() system call to handle multiple clients simultaneously.
+6 - Use the friendly bot, the command to see all other commands is "HALP"
 
-🤖 **Bot**: Detects if a user sends messages with bad words in it.
-
-🗂️ **File Transfer**: It's possible to send files through clients.
-
-## 🚀 Getting Started
-### 🛠️ Prerequisites
-A C++ compiler with support for C++11 or newer.
-Basic knowledge of IRC protocols (optional).
-
-### 📖 Compilation
-You can compile the project using:
-
-```bash
-make
-```
-
-And then run the server:
-```bash
-./ircserv <port> <password>
-```
-
-For example:
-```bash
-./ircserv 6667 12345
-```
-
-## 🙏 Acknowledgments
-A huge thank you to my colleagues gacorrei and abaiao-r for their invaluable contributions and insights. This project wouldn't be the same without their assistance. 🙌
-
-## 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Group
+[André Cândido da Silva](https://github.com/abaiao-r)\
+[Gabriel Franco](https://github.com/Zen55er)\
+[João Pereira](https://github.com/joao-per)
